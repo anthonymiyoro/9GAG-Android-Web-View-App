@@ -12,6 +12,9 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        shows the website below in the view
+        String url = "http://9gag.com/";
     }
 
     @Override
