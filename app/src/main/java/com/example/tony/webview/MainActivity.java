@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -15,6 +16,9 @@ public class MainActivity extends ActionBarActivity {
 
 //        shows the website below in the view
         String url = "http://9gag.com/";
+        WebView view = (WebView) this.findViewById(R.id.webView);
+//        enables javascript in the webview
+        view.getSettings().setJavaScriptEnabled(true);
     }
 
     @Override
