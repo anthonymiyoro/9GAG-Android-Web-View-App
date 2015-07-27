@@ -19,6 +19,8 @@ public class MainActivity extends ActionBarActivity {
         WebView view = (WebView) this.findViewById(R.id.webView);
 //        enables javascript in the webview
         view.getSettings().setJavaScriptEnabled(true);
+//        loads url
+        view.loadUrl(url);
     }
 
     @Override
